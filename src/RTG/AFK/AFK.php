@@ -31,7 +31,7 @@ class AFK extends PluginBase implements Listener {
 		$this->saveResource("afk.txt");
 		$this->saveResource("config.yml");
 		$this->a = new Config($this->getDataFolder() . "afk.txt");
-		$this->c = new Config($this->getDataFolder() . "config.yml");
+		$this->c = new Config($this->getDataFolder() . "config.yml", Config::YAML);
 		$this->getLogger()->warning("
 		* Loading AFKMode...
 		* Checking Version
